@@ -6,26 +6,29 @@
 def ordem(panquecas):
     armazena = int
     #a = variavel booleana para determinar o fim do processo
-    panquecas = list(input())
+    panquecas = list()
     indice = int
-
-    for i in range(1, len(panquecas), 1):
-        if panquecas[i - 1] < panquecas[i]:
-            a = True
+    a = False
+    i = len(panquecas)
 
     while a == False:
-        armazena = max(panquecas)
-        print("Posicionando a panqueca ", armazena)
+        armazena = max(panquecas[0:i])
+        print("Posicionando a panqueca ", panquecas.index(armazena))
         panquecas.insert(0, armazena)
-        del(panquecas[len(panquecas)])
+        del(panquecas[panquecas.index(armazena)])
+        panquecas.insert(0 , armazena)
         print("Primeira inversao: ", panquecas)
-
+        b = panquecas.pop(0)
+        panquecas.insert(i , b)
         print("Segunda inversao: ", panquecas)
-
+        i = i - 1
+        for j in range(1, len(panquecas), 1):
+           if panquecas[j - 1] < panquecas[j]:
+              a = True
     if a == True:
         print(panquecas)
 
 
 lista = list(input())
-lista.remove(" ")
+
 ordem(lista)
