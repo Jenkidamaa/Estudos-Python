@@ -89,13 +89,3 @@ print("x"*30)
 for i in range(n2):
     print(matriz2tFH[i])
 
-def flip_vertical(imagem_original):
-    ...
-
-
-def rotacao_90(imagem_original):
-    ...
-
-
-def rotacao_180(imagem_original):
-    ...
