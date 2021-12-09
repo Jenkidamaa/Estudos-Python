@@ -4,7 +4,7 @@
 
 #adiciona e transforma o inteiro em uma lista de strings
 valores = list(input())
-#transforma strings em inteiros
+#transforma strings em inteiro
 panquecas = []
 for val in valores:
     panquecas.append(int(val))
