@@ -1,4 +1,4 @@
-# Projetos-Python
+# Estudos Python
 
 ![clipart4343754](https://user-images.githubusercontent.com/85850597/144335704-8722bbc6-a5f2-4835-8fda-7b0fe3426e01.png)
 
