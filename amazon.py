@@ -1,4 +1,4 @@
-class Solution:
+class Solution:    
     def majorityElement(self, A):
         vezes = 0
         a = len(A)
