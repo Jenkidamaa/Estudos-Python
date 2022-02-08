@@ -34,5 +34,32 @@ while acu < d:
   acu += 1
 print(m)
                 
+#####################################################
+                
+x = int(input())
+y = int(input())
+z = int(input())
+n = int(input())
+m = []
+acu = 0
+d = x*y*z
+i=0
+j=0
+k=0
+
+
+for i in range(0,x+1):
+  if (0<=i<=x) and (x+y+z)!=n:
+    m.append([i,j,k])
+
+for j in range(0,y+1):
+  if (0<=j<=y) and (x+y+z)!=n:
+    m.append([i,j,k])
+for k in range(0,z+1):
+  if (0<=k<=z) and (x+y+z)!=n:
+    m.append([i,j,k]) 
+
+print(m)                
+                
                 
                 
