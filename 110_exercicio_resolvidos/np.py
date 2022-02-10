@@ -1,3 +1,4 @@
+#importação de ferramentas
 from numpy.lib.function_base import append
 import numpy as np
 
