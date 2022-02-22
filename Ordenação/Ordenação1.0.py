@@ -30,3 +30,5 @@ if PI == True:
       fim -= 1
       acu += 1
 print(l)
+##Com a primeira tentativa de criação do código acontece a substituição dos valores das posições "inicio" e "fim" perdendo-os ao decorrer do código, 
+##uma alternativa para contornar a situação seria armazenar esses valores e substitui-los nas posições de são retirados "maiores" e "menores".
