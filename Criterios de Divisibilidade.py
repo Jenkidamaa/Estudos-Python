@@ -18,6 +18,7 @@ if soma % 3 == 0:
 n_div_4 = n_lista[len(n_lista-2)] + n_lista[len(n_lista-1)]
 if int(n_div_4) % 4 == 0:
   print("Divisivel por 4")
+  c_div_ = True
   
 # 5 : Divisibilidade por 5 se um número tiver como ultimo algarismo das unidades 0 ou 5 então é divisível por 5.
 
@@ -39,4 +40,15 @@ if (n_div_7_primeiros_int - 2 * n_div_7) % 7 == 0:
               
               
 
-# 8 : Divisibilidade por 8 se os três últimos algarismos forem divisíveis por 8, (ou se terminar em 000) então o número também é divisível por 8
+# 8 : Divisibilidade por 8 se os três últimos algarismos forem divisíveis por 8, (ou se terminar em 000) então o número também é divisível por 8.
+              
+if (div_4 == True):
+   print("Divisivel por 8")
+              
+# 9 : Divisibilidade por 9 se a soma dos algarismos do número for divisível por 9 então o número também é divisível por 9.    
+             
+n_lista = list(n)
+for i in n_lista:
+  soma += int(i)
+if soma % 9 == 0:
+  print("Divisivel por 9")
