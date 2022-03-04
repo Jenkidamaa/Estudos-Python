@@ -41,27 +41,36 @@ def armazena_notas(n,lista):
 
 def media(lista):
     lista_media = []
-    for i in range(len(lista_media)):
-        lista_media.append(lista[i][0]+lista[i][1]) #n1+n2
+    for i in range(len(lista)):
+        lista_media.append((lista[i][0]+lista[i][1])/2) #n1+n2
     return lista_media
 
 def mediana(lista):
     lista_organizada = sorted(lista)
-    mediana = lista_organizada[int(len(lista_organizada/2))]
+    indice = int(len(lista)/2)
+    mediana = lista_organizada[indice]
     
-def desvio_padrão(n, lista_medias, ):
-    lista_medidas = lista_medias
+def desvio_padrão(lista): #entra com a lista que contem (n1+n2)/2
+    #lista_medidas = lista_medias
+    lista_medidas = [] #lista referente ao valor da lista com as medias subtraidas da media
+    
     passo = 0
-    for i in range(len(lista_medidas)):
+    media_1 = 0 #valor da media da lista com as medias dos alunos ∑(n1+n2)/n
+    passo2 = 0
+    desvio = 0
+    numero_elementos = len(lista)
+    #for para encontrar o valor medios das notas
+    for i in range(numero_elementos):
         media_1 += lista[i]
-    media = media_1 / (len(lista_medidas)+1)
+    media = media_1 / (numero_elementos)
+
     
-    for i in range(len(lista_medidas)):
-        lista_medidas[i] = lista_medidas[i]-media
+    for i in range(numero_elementos):
+        lista_medidas.append(lista[i]-media)
         lista_medidas[i] = lista_medidas[i] ** 2
         passo += lista_medidas[i]
     
-    passo2 = passo / (len(lista_medidas)-1)
+    passo2 = passo / (numero_elementos-1)
     desvio = passo2 ** 1/2
     return desvio   
 
