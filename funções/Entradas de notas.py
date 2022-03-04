@@ -30,6 +30,7 @@ def armazena_notas(n,lista):
         n1 = float(input("Digite a primeira nota "))
         n2 = float(input("Digite a segunda nota "))        
         lista_notas.append([n1,n2])
+    acu += 1
     return lista_notas   
     
     
