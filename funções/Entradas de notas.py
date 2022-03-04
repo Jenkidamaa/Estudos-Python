@@ -18,6 +18,15 @@ def armazena_nome(n): # = numero de alunos
         acu += 1
     return lista_nome
 
-def armazena_nome(n):
+def armazena_notas(n,lista):
+    lita_notas = []
+    acu = 0
+    while acu < n:
+        print("Insira a nota do aluno {} ".format(lista[acu]))
+        n1 = float(input("Digite a primeira nota "))
+        n2 = float(input("Digite a segunda nota "))        
+        lista_notas.append([n1,n2])
+    return lista_notas   
+    
     
         
