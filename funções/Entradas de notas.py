@@ -10,3 +10,14 @@ def armazena(n): #n = numero de alunos
         acu += 1
     return lista_nome, lista_notas
     
+def armazena_nome(n): # = numero de alunos
+    lista_nome = []
+    acu = 1
+    while acu <= n:
+        lista_nome.append(str(input("Digite o nome do aluno de Ra de numero {}: ".format(acu))))
+        acu += 1
+    return lista_nome
+
+def armazena_nome(n):
+    
+        
