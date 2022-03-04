@@ -74,6 +74,15 @@ def desvio_padrão(lista): #entra com a lista que contem (n1+n2)/2
     desvio = passo2 ** 1/2
     return desvio   
 
-
-    
-    
+def imprimir():
+    n = int(print("Digite o numero de alunos da turma: "))
+    lista_nome = armazena_nome(n)
+    lista_notas = armazena_notas(n, lista_nome)
+    lista_media = media(lista_notas)
+    DP = desvio_padrão(lista_media)
+    for i in range(n):
+        print(lista_nome[i])
+        print(lista_notas[i][0], lista_notas[i][1])
+        print(lista_media[i])
+    print("Desvio padrão das notas", DP)
+        
