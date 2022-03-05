@@ -1,18 +1,20 @@
 if __name__ == '__main__':
     n = int(input())
     arr = list(map(int, input().split()))
-    maior = 0
+    maior = -999999
     for i in arr:
         if i > maior:
             maior = i
-    print(arr)
-    for i in arr:
-        print(i)
-        if i == maior:
+    a = 0
+    while a < n:    
+      for i in arr:             
+        if maior == i:
           arr.remove(maior)
-    maior = 0
+      a += 1
+    maior = -9999999
+      
     for i in arr:
         if i > maior:
             maior = i
-    print(arr)    
+      
     print(maior)
