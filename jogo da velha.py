@@ -10,8 +10,6 @@ jogador2 = str(input())
 simbolo1 = str(input())
 simbolo2 = str(input())
 fim = False
-
-
 while fim != True:
     #entrada da coordenada
     jogada_player_1 = tuple(input())
