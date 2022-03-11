@@ -17,8 +17,6 @@ def jogo_da_velha():
     laço_checar_espaço_preenchido = False
     acu = 0
     while fim != True:
-
-
         # não alocar jogada em espaço que ja foi preenchido
         while laço_checar_espaço_preenchido == False:
             # entrada da coordenada
