@@ -1,14 +1,10 @@
 def printar(tabuleiro):
     for i in range(len(tabuleiro)):
         print(tabuleiro[i])
-
 def jogo_da_velha():
     tabuleiro = [["-", "-", "-"],
                  ["-", "-", "-"],
                  ["-", "-", "-"]]
-
-
-
     jogador1 = str(input("Insira o nome do primeiro jogador: "))
     jogador2 = str(input("Insira o nome do segundo jogador: "))
     simbolo1 = str(input("Escolha entre X ou O: "))
