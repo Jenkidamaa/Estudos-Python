@@ -1,13 +1,6 @@
+
 def mutate_string(string, position, character):
-    string = str(input())
-    lista = list(string)
-    position = int(input())
-    character = str(input())
-    lista[position] = character
-    string = str(lista)
-    
-    
-    return string
+    return string[:position] + character + string[position + 1:]
 
 if __name__ == '__main__':
     s = input()
