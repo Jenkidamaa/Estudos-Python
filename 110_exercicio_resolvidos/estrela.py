@@ -1,4 +1,4 @@
-Desenhar estrela python
+
 #parte superior triangulo
 #espacos
 a1= 10
